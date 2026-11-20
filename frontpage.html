@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The World in One Image — Friday, November 20, 2026</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1024px; height: 1024px; }
+  body {
+    font-family: Georgia, 'Liberation Serif', 'DejaVu Serif', serif;
+    background: #f6f1e3;
+    color: #191919;
+    overflow: hidden;
+  }
+  .page { width: 1024px; height: 1024px; padding: 13px 34px 4px 34px; display: flex; flex-direction: column; }
+
+  /* ---------- masthead ---------- */
+  .topline { display: flex; justify-content: space-between; font-family: Arial, 'Liberation Sans', sans-serif;
+             font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: #555; padding-bottom: 5px; }
+  .masthead { text-align: center; font-size: 42px; font-weight: bold; letter-spacing: 0.5px; line-height: 1.02;
+              border-top: 4px solid #191919; padding-top: 5px; }
+  .datebar { margin-top: 6px; background: #191919; color: #fff; text-align: center; white-space: nowrap;
+             font-family: Arial, 'Liberation Sans', sans-serif; font-weight: bold;
+             font-size: 23px; letter-spacing: 2.5px; padding: 5px 0 6px 0; }
+  .datebar .thin { font-weight: normal; font-size: 15px; letter-spacing: 1.5px; color: #d8d2c0; }
+
+  /* ---------- lead ---------- */
+  .lead { padding: 8px 0 5px 0; border-bottom: 3px solid #191919; }
+  .kicker { font-family: Arial, 'Liberation Sans', sans-serif; font-size: 14.5px; font-weight: bold;
+            letter-spacing: 2.5px; color: #a41220; text-transform: uppercase; }
+  .lead h1 { font-size: 38px; line-height: 1.04; margin: 3px 0 5px 0; }
+  .leadrow { display: flex; gap: 20px; align-items: flex-start; }
+  .lead .txt { flex: 1; }
+  .lead p { font-size: 16.5px; line-height: 1.26; }
+  .lead p + p { margin-top: 6px; }
+  .artbox { width: 302px; flex: none; }
+  .artbox svg { display: block; border: 1px solid #8d8468; }
+  .caption { margin-top: 4px; font-family: Arial, 'Liberation Sans', sans-serif; font-size: 11.5px;
+             letter-spacing: 1px; text-transform: uppercase; color: #555; text-align: center; }
+
+  /* ---------- middle ---------- */
+  .mid { display: grid; grid-template-columns: 1.02fr 1fr; gap: 22px; padding: 7px 0 5px 0; border-bottom: 2px solid #191919; }
+  .court h2 { font-size: 24px; line-height: 1.08; margin: 3px 0 4px 0; }
+  .court p { font-size: 16.5px; line-height: 1.25; }
+  .stack { display: flex; flex-direction: column; }
+  .story h3 { font-size: 20px; line-height: 1.1; margin: 2px 0 3px 0; }
+  .story p { font-size: 16px; line-height: 1.25; }
+  .story + .story { border-top: 1px solid #b9b09a; margin-top: 7px; padding-top: 7px; }
+
+  /* ---------- bottom ---------- */
+  .bot { display: grid; grid-template-columns: 1fr 1.06fr; gap: 22px; padding: 7px 0 6px 0; flex: 1; }
+  .gta { background: linear-gradient(180deg, #160b31 0%, #341055 58%, #57124f 100%); color: #ffeef7; padding: 9px 16px 8px 16px; }
+  .gta h2 { font-size: 24px; line-height: 1.08; margin: 4px 0 3px 0; color: #fff; }
+  .gta .kicker { color: #ffb3d9; }
+  .gta .big { font-size: 33px; font-weight: bold; color: #ffd166; line-height: 1; margin: 1px 0 3px 0; }
+  .gta p { font-size: 16px; line-height: 1.25; color: #f6dcff; }
+  .gta p b { color: #ffd166; }
+  .bot h3 { font-size: 22px; line-height: 1.12; margin: 3px 0 4px 0; }
+  .bot .plain p { font-size: 16px; line-height: 1.25; }
+  .bars { margin: 5px 0 3px 0; font-family: Arial, 'Liberation Sans', sans-serif; }
+  .bar-row { display: flex; align-items: center; gap: 10px; margin-top: 4px; }
+  .bar-lab { width: 74px; font-size: 14px; font-weight: bold; letter-spacing: 0.5px; text-align: right; }
+  .bar-track { flex: 1; background: #e3dcc6; height: 15px; }
+  .bar-fill { height: 15px; background: #a41220; }
+  .bar-fill.dark { background: #333; }
+  .bar-num { font-size: 16px; font-weight: bold; width: 76px; }
+
+  /* ---------- briefs + footer ---------- */
+  .briefs { display: flex; gap: 18px; border-top: 2px solid #191919; padding: 6px 0 6px 0;
+            font-size: 15px; line-height: 1.26; }
+  .briefs div { flex: 1; }
+  .briefs div + div { border-left: 1px solid #b9b09a; padding-left: 18px; }
+  .briefs b { font-size: 15.5px; }
+  .markets { background: #191919; color: #fff; font-family: Arial, 'Liberation Sans', sans-serif;
+             font-size: 15px; padding: 6px 12px; display: flex; justify-content: space-between; align-items: center; }
+  .markets b { color: #ffd166; letter-spacing: 1.5px; }
+  .markets .down { color: #ff8a7a; } .markets .up { color: #9fe870; }
+  .sources { margin-top: 5px; font-family: Arial, 'Liberation Sans', sans-serif; font-size: 11px; color: #6b6552; text-align: center; letter-spacing: 0.4px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- MASTHEAD -->
+  <div class="topline"><span>One page &middot; The whole day</span><span>Est. 2026 &middot; No. 20</span></div>
+  <div class="masthead">The World in One Image</div>
+  <div class="datebar">FRIDAY, NOVEMBER 20, 2026 <span class="thin">&nbsp;&middot;&nbsp; THE DAY IN ONE PAGE</span></div>
+
+  <!-- LEAD -->
+  <div class="lead">
+    <div class="kicker">The Morning After &middot; Shenzhen Summit</div>
+    <h1>PUTIN RULES OUT A TRUCE AS EUROPE RALLIES TO KYIV</h1>
+    <div class="leadrow">
+      <div class="txt">
+        <p>A day after the Shenzhen trilateral, the world split over what it meant. In <b>Berlin</b>, some
+        40 partners of the Coalition of the Willing &mdash; Merz hosting, Macron and Zelenskyy beside him,
+        US envoys attending, Trump on the phone &mdash; demanded a European seat at any
+        peace table, backed security guarantees for Ukraine and discussed a proposed <b>&euro;45bn EU
+        loan</b>.</p>
+        <p>The E3 &mdash; Britain, France, Germany &mdash; called for a winter ceasefire on energy strikes.
+        From Moscow: <b>no sea or energy truce</b>, Putin said, after Ukrainian forces hit the Kerch Bridge
+        again overnight. Zelenskyy called the strikes retaliation for attacks on Ukraine&rsquo;s grid.
+        Shenzhen&rsquo;s declaration never mentioned Ukraine or Iran; Trump&rsquo;s embrace of Xi and
+        Putin drew pushback at home.</p>
+      </div>
+      <div class="artbox">
+        <svg width="302" height="118" viewBox="0 0 302 118">
+          <rect width="302" height="118" fill="#e9e2cc"/>
+          <rect y="86" width="302" height="32" fill="#7d94a6"/>
+          <g stroke="#5d7689" stroke-width="2" fill="none" opacity="0.7">
+            <path d="M4 98 q9 -5 18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0"/>
+            <path d="M22 110 q9 -5 18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0 t18 0"/>
+          </g>
+          <!-- smoke -->
+          <g fill="#4c4c4c">
+            <ellipse cx="168" cy="22" rx="15" ry="9" opacity="0.85"/>
+            <ellipse cx="182" cy="12" rx="19" ry="10" opacity="0.65"/>
+            <ellipse cx="160" cy="34" rx="10" ry="6" opacity="0.9"/>
+            <ellipse cx="200" cy="6" rx="12" ry="6" opacity="0.45"/>
+          </g>
+          <!-- pylons -->
+          <g fill="#2e2a26">
+            <path d="M44 86 L52 24 L60 86 Z"/>
+            <path d="M240 86 L248 24 L256 86 Z"/>
+          </g>
+          <!-- cables -->
+          <g stroke="#2e2a26" stroke-width="1.5" fill="none">
+            <path d="M52 26 Q96 58 142 62"/>
+            <path d="M52 26 Q24 52 2 58"/>
+            <path d="M248 26 Q204 58 158 62"/>
+            <path d="M248 26 Q276 52 298 58"/>
+          </g>
+          <!-- deck: intact left, broken middle, intact right -->
+          <g fill="#2e2a26">
+            <rect x="0" y="60" width="142" height="6"/>
+            <rect x="170" y="60" width="132" height="6"/>
+            <path d="M142 60 L170 60 L163 76 L147 70 Z"/>
+          </g>
+          <!-- fire at the break -->
+          <g>
+            <path d="M150 60 q3 -12 7 -15 q2 7 5 10 q3 -3 4 -7 q5 8 2 12 Z" fill="#d8542e"/>
+            <path d="M155 60 q2 -7 4 -9 q2 5 3 9 Z" fill="#f2a03c"/>
+          </g>
+        </svg>
+        <div class="caption">The Kerch Bridge &middot; struck again overnight</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MIDDLE -->
+  <div class="mid">
+    <div class="court">
+      <svg width="100%" height="20" viewBox="0 0 470 34" preserveAspectRatio="xMidYMid meet">
+        <g fill="#2e2a26">
+          <polygon points="235,1 322,14 148,14"/>
+          <rect x="132" y="16" width="206" height="3.5"/>
+          <rect x="150" y="21" width="11" height="9"/><rect x="185" y="21" width="11" height="9"/>
+          <rect x="229" y="21" width="11" height="9"/><rect x="274" y="21" width="11" height="9"/>
+          <rect x="309" y="21" width="11" height="9"/>
+          <rect x="126" y="31" width="218" height="3"/>
+        </g>
+        <circle cx="235" cy="8" r="3" fill="#a41220"/>
+      </svg>
+      <div class="kicker">The Hague &middot; World Court</div>
+      <h2>MYANMAR COMMITTED GENOCIDE, COURT RULES</h2>
+      <p>The world court found, <b>9&ndash;6</b>, that Myanmar committed genocide against
+      the Rohingya in 2017 &mdash; the first time the world court has held a state responsible for genocide.
+      Judges cited <b>10,000 killed</b> and 730,000 driven into Bangladesh, and ordered reparations.</p>
+    </div>
+
+    <div class="stack">
+      <div class="story">
+        <div class="kicker">Middle East &middot; Hormuz</div>
+        <h3>HORMUZ ATTACKS RISE, OIL FALLS</h3>
+        <p>Iran has mounted about <b>14 attacks</b> on shipping in and near Hormuz this month, shifting to
+        cruise missiles after Muscat talks collapsed. Yet Brent has slid a fifth in November, to about
+        $92, as the IEA sees supply outrunning demand.</p>
+      </div>
+      <div class="story">
+        <div class="kicker">United Nations</div>
+        <h3>NO SUCCESSOR FOR GUTERRES</h3>
+        <p>The race to lead the UN has stalled: after eight rounds of voting, the Security Council&rsquo;s
+        five veto powers cannot agree on who follows Ant&oacute;nio Guterres &mdash; the UN could soon
+        be leaderless.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTTOM -->
+  <div class="bot">
+    <div class="gta">
+      <svg width="100%" height="26" viewBox="0 0 440 56" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#2a0a4a"/><stop offset="0.6" stop-color="#8e2a6d"/><stop offset="1" stop-color="#ff7e3c"/>
+          </linearGradient>
+        </defs>
+        <rect width="440" height="56" fill="url(#sky2)"/>
+        <circle cx="330" cy="58" r="19" fill="#ffd166"/>
+        <g fill="#12071f">
+          <rect x="6" y="24" width="22" height="32"/><rect x="34" y="14" width="17" height="42"/><rect x="57" y="30" width="26" height="26"/>
+          <rect x="150" y="18" width="20" height="38"/><rect x="176" y="28" width="28" height="28"/>
+          <rect x="368" y="22" width="21" height="34"/><rect x="395" y="12" width="16" height="44"/><rect x="416" y="28" width="20" height="28"/>
+        </g>
+        <g fill="#ffd166" opacity="0.85">
+          <rect x="12" y="32" width="3.4" height="4"/><rect x="40" y="24" width="3.4" height="4"/><rect x="63" y="38" width="3.4" height="4"/>
+          <rect x="156" y="28" width="3.4" height="4"/><rect x="374" y="32" width="3.4" height="4"/><rect x="401" y="22" width="3.4" height="4"/>
+        </g>
+        <g stroke="#0b0518" stroke-width="3.6" fill="none" stroke-linecap="round">
+          <path d="M112 56 C 114 42, 116 32, 114 20"/>
+          <path d="M250 56 C 248 44, 247 34, 249 24"/>
+        </g>
+        <g stroke="#0b0518" stroke-width="3" fill="none" stroke-linecap="round">
+          <path d="M114 20 C 104 12, 96 11, 89 15"/><path d="M114 20 C 112 9, 107 4, 100 2"/>
+          <path d="M114 20 C 121 9, 128 5, 136 5"/><path d="M114 20 C 124 13, 132 13, 138 17"/>
+          <path d="M249 24 C 239 16, 231 15, 224 19"/><path d="M249 24 C 247 13, 242 8, 235 6"/>
+          <path d="M249 24 C 256 13, 263 9, 271 9"/><path d="M249 24 C 259 17, 267 17, 273 21"/>
+        </g>
+        <rect x="0" y="54" width="440" height="2" fill="#ff2e88"/>
+      </svg>
+      <div class="kicker">Entertainment &middot; Day One</div>
+      <h2>GTA VI TOPS $2.36BN IN A DAY</h2>
+      <div class="big">24.6M COPIES</div>
+      <p>Sensor Tower&rsquo;s evening estimate: <b>24.58 million copies</b>, <b>$2.36bn</b> on launch day
+      &mdash; double GTA V&rsquo;s record, the biggest entertainment launch ever. 75% were on PlayStation;
+      Take-Two has yet to confirm.</p>
+    </div>
+
+    <div class="plain">
+      <div class="kicker">Health &middot; Congo</div>
+      <h3>EBOLA: SIX MONTHS ON, STILL NOT UNDER CONTROL</h3>
+      <div class="bars">
+        <div class="bar-row"><div class="bar-lab">CASES</div><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><div class="bar-num">11,504</div></div>
+        <div class="bar-row"><div class="bar-lab">DEATHS</div><div class="bar-track"><div class="bar-fill dark" style="width:49%"></div></div><div class="bar-num">5,630</div></div>
+      </div>
+      <p>The Bundibugyo outbreak &mdash; the deadliest in Congo&rsquo;s history &mdash; now spans eight
+      provinces, still adding <b>400&ndash;500 cases a week</b>. No vaccine is approved for this strain;
+      Oxford and Moderna candidates join trials within weeks.</p>
+    </div>
+  </div>
+
+  <!-- BRIEFS -->
+  <div class="briefs">
+    <div><b>Cyclone Akvan.</b> Landfall began early Friday on India&rsquo;s Andhra&ndash;Odisha
+    coast, the IMD said.</div>
+    <div><b>Pete Rose pardoned.</b> Trump posthumously pardoned baseball&rsquo;s banned hits leader.</div>
+    <div><b>COP31 draft.</b> The climate text drops a fossil-fuel phase-out and net-zero dates.</div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="markets">
+    <span><b>MARKETS</b></span>
+    <span>BRENT <span class="down">$91.7 &#9660;</span> A FIFTH OFF IN NOV</span>
+    <span>WTI <span class="down">$85.0</span></span>
+    <span>ANTHROPIC <span class="up">+17%</span> ON DEBUT</span>
+    <span>JAPAN CPI UP &middot; BOJ HIKE ON TRACK</span>
+  </div>
+  <div class="sources">Sources: The Times &middot; Japan Times &middot; Reuters &middot; Al Jazeera &middot; UN News &middot; WHO &middot; UKMTO via Bloomberg &middot; Sensor Tower &middot; The Hindu &mdash; Nov 19&ndash;20, 2026.</div>
+
+</div>
+</body>
+</html>
